@@ -15,7 +15,7 @@ app = Flask(__name__)
 # TODO: Fetch dataset, initialize vectorizer and LSA here
 
 # Fetch dataset
-newsgroups = fetch_20newsgroups(subset='all', remove=('headers', 'footers', 'quotes'))
+newsgroups = fetch_20newsgroups(subset='all')
 
 # Initialize vectorizer
 stop_words = 'english'
